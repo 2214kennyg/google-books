@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  max-width: 100%;
+  background-color: rgb(127, 217, 109);
+  border: solid rgb(75, 37, 111);
+  border-width: 20px 60px 20px 60px;
+  margin: 0px;
+  color: rgb(71, 31, 62);
+}
+
+.bodyAlt {
+  height: 100%;
+  max-width: 100%;
+  background-color: rgb(127, 217, 109);
+  border: solid rgb(75, 37, 111);
+  border-width: 20px 60px 20px 60px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid rgb(71, 31, 62);
+  border-width: 0px 0px 2px 0px;
+  padding: 0px 0px 30px;
+}
+.header__title {
+  text-decoration: underline;
+}
+.header__para {
+  margin: 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+#searchBar {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.books {
+  display: grid;
+  margin: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.book {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(169, 251, 167);
+  color: rgb(75, 37, 111);
+}
+.book__title {
+  margin-bottom: 0px;
+  text-decoration: underline;
+}
+.book__subtitle {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.book__authors {
+  text-decoration: underline;
+  font-size: large;
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1600px) {
+  .books {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .books {
+    grid-template-columns: 1fr;
+  }
+}
