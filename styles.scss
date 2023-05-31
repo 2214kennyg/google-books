@@ -72,6 +72,9 @@ form {
         text-decoration: underline;
         font-size: large;
     }
+    &__description {
+        padding: 0px 8px;
+    }
 }
 
 // grid should be responsive on different screen sizes
